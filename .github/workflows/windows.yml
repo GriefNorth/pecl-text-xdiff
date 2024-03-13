@@ -4,9 +4,9 @@ jobs:
   build:
     strategy:
       matrix:
-        version: [7.4, 7.3]
-        ts: [nts, ts]
-        arch: [x64, x86]
+        version: [8.3]
+        ts: [nts]
+        arch: [x64]
     runs-on: windows-2016
     steps:
       - name: Set git to use LF
