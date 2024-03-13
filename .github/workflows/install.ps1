@@ -36,7 +36,7 @@ Expand-Archive $file -DestinationPath "php"
 $file = "php-devel-pack-$phpversion$tspart-Win32-vs16-$arch.zip"
 Invoke-WebRequest "https://windows.php.net/downloads/releases/$file" -OutFile $file
 Expand-Archive $file -DestinationPath .
-Move-Item "php-$phpversion-devel-vc15-$arch" -Destination "php-devel"
+Move-Item "php-$phpversion-devel-vs16-$arch" -Destination "php-devel"
 
 # libxdiff
 

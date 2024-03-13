@@ -15,7 +15,7 @@ Set-Location "pecl-text-xdiff"
 $task = New-Item "..\task.bat" -Force
 Add-Content $task 'nmake test TESTS="--show-diff tests" 2>&1'
 Add-Content $task "exit %errorlevel%"
-& "..\php-sdk\phpsdk-vc15-$arch.bat" -t $task
+& "..\php-sdk\phpsdk-vs16-$arch.bat" -t $task
 if (-not $?) {
     throw "build failed with errorlevel $LastExitCode"
 }

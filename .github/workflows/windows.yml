@@ -26,5 +26,5 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
-          name: php_xdiff-dev-${{matrix.version}}-${{matrix.ts}}-vc15-${{matrix.arch}}
+          name: php_xdiff-dev-${{matrix.version}}-${{matrix.ts}}-vs16-${{matrix.arch}}
           path: windows_package
