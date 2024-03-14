@@ -17,7 +17,7 @@ Add-Content $task "call phpize 2>&1"
 Add-Content $task "call configure --with-prefix=$phpdir --with-extra-includes=deps\include --with-extra-libs=deps\lib --enable-debug-pack --with-xdiff"
 Add-Content $task "nmake 2>&1"
 Add-Content $task "exit %errorlevel%"
-& "..\php-sdk\phpsdk-vs16-$arch.bat" -t $task
+& "..\php-sdk\phpsdk-vc15-$arch.bat" -t $task
 if (-not $?) {
     throw "build failed with errorlevel $LastExitCode"
 }
