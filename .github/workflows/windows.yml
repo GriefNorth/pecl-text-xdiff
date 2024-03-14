@@ -7,7 +7,7 @@ jobs:
         version: [7.4]
         ts: [nts]
         arch: [x64]
-    runs-on: windows-2019
+    runs-on: windows-2016
     steps:
       - name: Set git to use LF
         run: |
@@ -28,3 +28,4 @@ jobs:
         with:
           name: php_xdiff-dev-${{matrix.version}}-${{matrix.ts}}-vc15-${{matrix.arch}}
           path: windows_package
+
