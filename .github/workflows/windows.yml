@@ -7,7 +7,7 @@ jobs:
         version: [7.4]
         ts: [nts]
         arch: [x64]
-    runs-on: windows-2016
+    runs-on: windows-2019
     steps:
       - name: Set git to use LF
         run: |
